@@ -16,9 +16,8 @@ interface RootResolver {
 }
 
 const rootResolver: RootResolver = {
-  hello({ response }: { response: string }) {
-    return `Hello, ${response.substr(0, 1).toUpperCase() +
-      response.substr(1)}!`;
+  hello({ response: [first, ...rest] }: { response: string }) {
+    return `Hello, ${first.toUpperCase() + rest.join('')}!`;
   },
   albert() {
     return 'Albert';
