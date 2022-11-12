@@ -36,6 +36,6 @@
     "types-cloudflare-worker": "^1.0.1",
     "typescript": "^3.5.3",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.12"
   }
 }
